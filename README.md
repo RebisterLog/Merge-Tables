@@ -39,9 +39,9 @@ As an example, I decided to take fictional player data that is stored in the dat
 
 local pattern = {
     Data = {
-        Void = {},
-        Strength = 0,
-        Inventory = {},
+        Void = {}, -- DEFAULT DATA
+        Strength = 0, -- DEFAULT DATA
+        Inventory = {}, -- DEFAULT DATA
 
         Money = 0, -- NEW DATA 
         Quest = 0, -- NEW DATA 
