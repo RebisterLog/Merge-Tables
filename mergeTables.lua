@@ -4,7 +4,7 @@ function mergeTables(pattern, copy)
     for index, value in pairs(pattern) do
 
         if type(value) == "table" then
-            exitTable[index] = combine(value, copy[index] or {})
+            exitTable[index] = mergeTables(value, copy[index] or {})
         else
             exitTable[index] = copy[index] or value
         end
